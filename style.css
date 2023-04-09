@@ -1,0 +1,57 @@
+body {
+    width: 100%;
+  height: 100vh;
+        display: flex;
+				margin: 0;
+  padding: 0;
+				overflow: hidden;
+				background: rgba(1.8752989477040825,47.299206792091816,70.01116071428571, 1);
+        justify-content: center;
+        align-items: center;
+				/* disables highlighting on mobile */
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				user-select: none;
+				-webkit-touch-callout: none;
+      
+			}
+			canvas {
+        
+				outline: none;
+				display: block;
+			}
+			
+			
+			.spline-watermark {
+				position: absolute;
+				z-index: 2;
+				bottom: 20px;
+				right: 20px;
+				width: 137px;
+				height: 36px;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				gap: 6px;
+				border-radius: 12px;
+				background: linear-gradient(180deg, #16181C 0%, #121316 100%);
+				box-shadow: inset 0px -2px 0px -1px #060709, inset 0px 1px 0px rgba(255, 255, 255, 0.04);
+			}
+			.spline-watermark span {
+				display: block;
+				width: 20px;
+				height: 20px;
+				background-image: url(https://app.spline.design/_assets/_icons/icon_favicon32x32.png);
+				background-size: cover;
+			}
+			.spline-watermark svg {
+				display: block;
+				margin-right: 2px;
+			}
+			.spline-watermark:hover {
+				background: linear-gradient(180deg, #1B1C21 0%, #17181C 100%);
+			}
+.center{
+  transform: translate(50%,0%);
+}
